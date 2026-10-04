@@ -1,0 +1,24 @@
+:root { --ink: #1d1b19; --ink-2: #57524c; --ink-3: #8a847c; --line: #e6e3dd; --bg: #f7f6f3; --panel: #fff; --accent: #ff5f3d; }
+@media (prefers-color-scheme: dark) {
+  :root { --ink: #ecebe8; --ink-2: #b4b0aa; --ink-3: #85817b; --line: #2a2b30; --bg: #151619; --panel: #1c1d21; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", sans-serif; -webkit-font-smoothing: antialiased; }
+main { max-width: 720px; margin: 0 auto; padding: 56px 24px 80px; }
+header { display: flex; align-items: center; gap: 10px; margin-bottom: 48px; }
+header a { color: inherit; text-decoration: none; font-weight: 680; font-size: 18px; letter-spacing: -.01em; display: flex; align-items: center; gap: 10px; }
+nav { margin-left: auto; display: flex; gap: 18px; font-size: 14px; }
+nav a { color: var(--ink-2); font-weight: 500; }
+h1 { font-size: 44px; line-height: 1.1; letter-spacing: -.03em; margin: 0 0 16px; }
+h2 { font-size: 20px; letter-spacing: -.01em; margin: 40px 0 8px; }
+p, li { color: var(--ink-2); }
+.lede { font-size: 19px; color: var(--ink-2); margin: 0 0 32px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin: 32px 0; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; }
+.card b { display: block; margin-bottom: 4px; color: var(--ink); }
+.card span { font-size: 14px; color: var(--ink-2); }
+kbd { font: 600 12px ui-monospace, SFMono-Regular, Menlo, monospace; padding: 1px 6px; border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 5px; background: var(--panel); color: var(--ink); }
+a { color: var(--accent); }
+footer { margin-top: 64px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 13px; color: var(--ink-3); display: flex; gap: 16px; flex-wrap: wrap; }
+footer a { color: var(--ink-3); }
+.note { background: var(--panel); border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 10px; padding: 14px 16px; }
